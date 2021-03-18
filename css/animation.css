@@ -1,0 +1,394 @@
+
+
+@keyframes anim_descriptionChapter{
+    0%{
+        right: -100vw;
+    }
+    60%{
+        right: -100vw;
+    }
+    100%{
+        right: 0;
+    }
+}
+
+@keyframes anim_Chapter{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes anim_colorTextButton{
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+        color: white;
+    }
+    25%{
+        opacity: 0;
+        color: var(--primary-color)
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes anim_backgroundWhite{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 31vw;
+    }
+}
+@keyframes anim_descriptionButton{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    38%{
+        width: 0;
+        height: 0;
+    }
+    76%{
+        width: 25vw;
+        height: 0;
+    }
+    100%{
+        height: 30%;
+    }
+}
+@keyframes anim_descriptionButton2{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    38%{
+        width: 0;
+        height: 0;
+    }
+    76%{
+        width: 25vw;
+        height: 0;
+    }
+    100%{
+        height: 2vw;
+    }
+}
+@keyframes anim_descriptionButton3{
+    0%{
+        width: 0;
+        height: 0;
+    }
+    38%{
+        width: 0;
+        height: 0;
+    }
+    76%{
+        width: 25vw;
+        height: 0;
+    }
+    100%{
+        height: 7vw;
+    }
+}
+@keyframes anim_background{
+    0%{
+        opacity: 0;
+        width: 150%;
+        height: 150%;
+    }
+    75%{
+        width: 100%;
+        height: 100%;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes anim_title{
+    0%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -100vw;
+        top: 9.9px;
+    }
+    41.5%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -9.9px;
+        top: 9.9px;
+    }
+    100%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -9.9px 9.9px 0 var(--primary-color);
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes anim_title2{
+    0%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -100vw;
+        top: 1.8vw;
+    }
+    41.5%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -1.8vw;
+        top: 1.8vw;
+    }
+    100%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -1.8vw 1.8vw 0 var(--primary-color);
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes anim_title3{
+    0%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -100vw;
+        top: 1.7vh;
+    }
+    41.5%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -1.7vh;
+        top: 1.7vh;
+    }
+    100%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -1.7vh 1.7vh 0 var(--primary-color);
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes anim_soustitle{
+    0% {
+        text-shadow: 2px 2px 0 var(--primary-color),
+        -2px -2px 0 var(--primary-color),
+        2px -2px 0 var(--primary-color),
+        -2px 2px 0 var(--primary-color),
+        2px 2px 0 var(--primary-color),
+        0 0 0 var(--primary-color);
+        left: -100vw;
+        top: 4.95px;
+    }
+    71.5%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -4.95px;
+        top: 4.95px;
+    }
+    100%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -4.95px 4.95px 0 var(--primary-color);
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes anim_soustitle2{
+    0% {
+        text-shadow: 2px 2px 0 var(--primary-color),
+        -2px -2px 0 var(--primary-color),
+        2px -2px 0 var(--primary-color),
+        -2px 2px 0 var(--primary-color),
+        2px 2px 0 var(--primary-color),
+        0 0 0 var(--primary-color);
+        left: -100vw;
+        top: 0.9vw;
+    }
+    71.5%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -0.9vw;
+        top: 0.9vw;
+    }
+    100%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -0.9vw 0.9vw 0 var(--primary-color);
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes anim_soustitle3{
+    0% {
+        text-shadow: 2px 2px 0 var(--primary-color),
+        -2px -2px 0 var(--primary-color),
+        2px -2px 0 var(--primary-color),
+        -2px 2px 0 var(--primary-color),
+        2px 2px 0 var(--primary-color),
+        0 0 0 var(--primary-color);
+        left: -100vw;
+        top: 0.8vh;
+    }
+    71.5%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                0 0 0 var(--primary-color);
+        left: -0.8vh;
+        top: 0.8vh;
+    }
+    100%{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -0.8vh 0.8vh 0 var(--primary-color);
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes anim_zoneText{
+    0%{
+        bottom: -100%;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes anim_button{
+    0%{
+        transform: scale(0.1,0);
+        margin-top: 4.5vh;
+        background-color: var(--secondary-color);
+        border-radius: 0.5vh;
+        box-shadow: 3px -3px 3px black;
+
+    }
+    5%{
+        margin-top: 4.5vh;
+        transform: scale(0.1,0.1);
+    }
+    50%{
+
+        transform: scale(0.1,0.1);
+        background-color: var(--secondary-color);
+        border-radius: 0.5vh;
+        box-shadow: 3px -3px 3px black;
+    }
+    100%{
+        margin-top: 0.5vh;
+        transform: scale(1,1);
+        background-color: var(--primary-color);
+        border-radius: 0;
+        box-shadow: 0 0 0 black;
+    }
+}
+
+@keyframes anim_borderMouv{
+    0%{
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 4%;
+    }
+    25%{
+        top:0;
+        left: 96%;
+        width: 4%;
+        height: 100%;
+    }
+    50%{
+        top: 96%;
+        left:0;
+        width: 100%;
+        height: 4%;
+    }
+    75%{
+        top: 0;
+        left:0;
+        width: 4%;
+        height: 100%;
+    }
+    100%{
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 4%;
+    }
+}

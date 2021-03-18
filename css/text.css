@@ -1,0 +1,54 @@
+h1{
+    text-shadow:
+            2px  2px 0 var(--primary-color),
+            -2px -2px 0 var(--primary-color),
+            2px -2px 0 var(--primary-color),
+            -2px  2px 0 var(--primary-color),
+            2px  2px 0 var(--primary-color),
+            -9.9px 9.9px var(--primary-color);
+    color: white ;
+    font-family: 'Goldman', sans-serif;
+    font-weight: 700;
+    font-size: 98px;
+    position: relative;
+    letter-spacing:-2px;
+    animation-name: anim_title;
+    animation-duration: 1.2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    text-align: center;
+}
+h2{
+    text-shadow:
+            2px  2px 0 var(--primary-color),
+            -2px -2px 0 var(--primary-color),
+            2px -2px 0 var(--primary-color),
+            -2px  2px 0 var(--primary-color),
+            2px  2px 0 var(--primary-color),
+            -4.95px 4.95px var(--primary-color);
+    font-family: 'Goldman', sans-serif;
+    font-weight:400;
+    color: white;
+    position: relative;
+    font-size: 56px;
+    margin-bottom: 10px ;
+    animation-name: anim_soustitle;
+    animation-duration: 0.7s;
+    animation-direction: normal;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    text-align: center;
+}
+p{
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+h6{
+    font-family: 'Goldman', sans-serif;
+    font-weight:400;
+}

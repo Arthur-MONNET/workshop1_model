@@ -1,0 +1,417 @@
+@import "variable.css";
+@import "text.css";
+@import "animation.css";
+::-webkit-scrollbar{
+    width: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+html{
+    font-size: 24px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+    background: url('../images/fond.png');
+    height: 100vh;
+}
+
+
+
+
+/*------------------------------Menu__________________________*/
+
+#containerFond{
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#background0{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    animation-name: anim_background;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.shadow{
+    height: 100vh;
+    width: 0;
+    box-shadow: 0 0 7vw 5vw;
+}
+
+
+#descriptionMenu{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0 5vw 5vh;
+    margin:  0  0 15vh;
+    height: 80vh;
+    width: 90vw;
+    overflow: hidden;
+
+}
+
+.textMenu{
+    position: relative;
+    font-size: 28px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 2%;
+    margin: 1%;
+    width: 94%;
+    z-index: 2;
+    border-top: white 8px solid;
+}
+
+#contentTextMenu{
+    width: 600px;
+    position: relative;
+    animation-name: anim_zoneText;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+/*---------------------------------------button________________________________________*/
+
+
+
+#buttons{
+    position: sticky;
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+    width: 100vw;
+    bottom: 5vh;
+}
+
+
+
+.button{
+    height: 9vh;
+    margin: 0.5vh 0;
+    width: 31vw;
+    position: relative;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation-name: anim_button;
+    animation-duration: 0.75s;
+    animation-fill-mode: backwards;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.1, 0.35, 0.82, 0.96);
+}
+
+#button1{
+    animation-delay: 3s;
+
+}
+#button2{
+    animation-delay: 3.25s;
+}
+#button3{
+    animation-delay: 3.5s;
+}
+.contentBackground{
+    position: absolute;
+    width: 31vw;
+    height: 9vh;
+}
+
+.backgroundWhite{
+    transition: width 0.25s;
+    background-color: white;
+    height: 100%;
+    width: 0;
+    position: relative;
+    left: initial;
+
+}
+.button:hover> .contentBackground>.backgroundWhite{
+    transition: width 0.25s;
+    width:31vw;
+}
+
+
+.button>h6{
+    transition: color 0.25s;
+    position: relative;
+    color: white;
+    font-size: 2.5vh;
+}
+.button:hover> h6{
+    transition: color 0.25s;
+    z-index: 1;
+    color: var(--primary-color);
+}
+.descriptionButton{
+    width: 0;
+    height: 0;
+    z-index: 1;
+    border-top: var(--secondary-color) solid 2px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.button:hover> p{
+    height: 3vh;
+    width: 25vw ;
+    font-size: 2vh;
+    z-index: 1;
+    color: var(--primary-color);
+    animation-name: anim_descriptionButton;
+    animation-duration: 0.65s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+
+/*-----------------------------------------chapter________________________________________*/
+
+.chapter{
+    display: none;
+}
+.chapter:target {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.chapter:target + #buttons{
+    position: sticky;
+    bottom: 5vh;
+}
+.background{
+    position: absolute;
+    width:100%;
+    height: 90vh;
+    object-fit: cover;
+    animation-name: anim_Chapter;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.zoneDescriptionChapter{
+    box-shadow:-1px  -7px 15px black;
+    position: relative;
+    width: 600px;
+    background-color: white;
+    padding: 2%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-bottom-left-radius: 5vh;
+    animation-name: anim_descriptionChapter;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.chapterDescription{
+    padding: 3% 0;
+    border-top: var(--secondary-color) 8px solid;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+.chapterTitle{
+    color: var(--primary-color);
+    font-size: 25px;
+}
+.image{
+    width:100%;
+    object-fit: cover;
+    border-bottom-left-radius: 5vh;
+
+}
+
+@media screen and (max-width: 1400px){
+    .textMenu{
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 900px){
+    .textMenu{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 700px){
+    #descriptionMenu{
+        align-items: stretch ;
+    }
+    #contentTextMenu{
+        width: 96%;
+    }
+}
+@media screen and (max-width: 550px){
+    #descriptionMenu{
+        width: 96vw;
+    }
+    h1{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -1.8vw 1.8vw var(--primary-color);
+        font-size: 16vw;
+        animation-name: anim_title2;
+    }
+    h2{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -0.9vw 0.9vw var(--primary-color);
+        font-size: 10vw;
+        animation-name: anim_soustitle2;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .button:hover> p{
+        font-size: 1.5vw;
+        height: 2vw;
+        animation-name: anim_descriptionButton2;
+    }
+}
+
+@media screen and (max-height: 550px)and (min-width:560px){
+    .textMenu{
+        font-size: 4.5vh;
+    }
+    h1{
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -1.7vh 1.7vh var(--primary-color);
+        font-size: 16.3vh;
+        animation-name: anim_title3;
+    }
+    h2{
+
+        text-shadow:
+                2px  2px 0 var(--primary-color),
+                -2px -2px 0 var(--primary-color),
+                2px -2px 0 var(--primary-color),
+                -2px  2px 0 var(--primary-color),
+                2px  2px 0 var(--primary-color),
+                -0.8vh 0.8vh var(--primary-color);
+        font-size: 9.3vh;
+        animation-name: anim_soustitle3;
+    }
+}
+@media screen and (max-width: 600px) and (min-height:750px) {
+    .button:hover> p{
+        font-size: 3vw;
+        height: 7vw;
+        animation-name: anim_descriptionButton3;
+
+    }
+
+}
+@media screen and (max-width: 500px) and (min-height:500px) {
+    .button> h6{
+        font-size: 5vw;
+    }
+}
+
+
+@media screen and (max-width: 700px)  {
+    .chapter:target {
+        justify-content: center;
+    }
+    .zoneDescriptionChapter{
+        border-radius: 5vh;
+        width: 600px;
+        margin:5vh 5vw 0;
+    }
+    .chapterTitle{
+        text-align: center;
+    }
+    .image{
+        border-bottom-left-radius: 5vh;
+        border-bottom-right-radius: 5vh;
+    }
+}
+
+@media screen and (max-height:850px) {
+    .image{
+        display: none;
+    }
+}
+@media screen and (max-width:300px) {
+    .chapterDescription{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-height:550px) and (min-width:300px) {
+    .chapterDescription{
+        font-size: 3vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
